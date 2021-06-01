@@ -1,0 +1,283 @@
+.nav-link {
+  font-weight: bolder;
+}
+
+#json {
+  transition: 0, 2s;
+}
+
+h1 span {
+  display: inline-block;
+}
+
+.mycard p {
+  font-weight: 400;
+}
+
+.mycard {
+  background-color: white;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 15px background; */
+  -webkit-transition: background 2s ease-out;
+  -moz-transition: background 2s ease-out;
+  -o-transition: background 2s ease-out;
+  transition: background 2s ease-out;
+  border: #489fab solid 0px;
+}
+
+#lineCont {
+  width: 100%;
+  height: 20%;
+}
+
+#line {
+  height: 6px;
+  width: 70%;
+  background: white;
+  border-radius: 5px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+#span {
+  display: none;
+  width: 70%;
+  margin: auto;
+  margin-top: 25%;
+  text-align: center;
+  color: white;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background: grey;
+  border-radius: 15px;
+  position: absolute;
+  top: -7px;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.circle:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  border-radius: 100%;
+  top: 2px;
+  left: 2px;
+  display: none;
+}
+.circle .popupSpan {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  white-space: nowrap;
+  display: inline-block;
+  color: white;
+  font-weight: 900;
+  font-size: 1.3em;
+  position: absolute;
+  top: 20px;
+  left: -75px;
+  display: none;
+  transition: all 0.1s ease-out;
+}
+.circle.hover:before,
+.circle.active:before {
+  display: block;
+}
+.circle.hover .popupSpan,
+.circle.active .popupSpan {
+  display: block;
+}
+.circle.active .popupSpan {
+  top: -40px;
+}
+
+#mainCont {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  color: white;
+  font-size: 62px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+#mainCont span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30%;
+  transition: all 0.2s ease-out;
+}
+#mainCont span.right {
+  left: 300%;
+}
+#mainCont span.center {
+  left: 0% !important;
+}
+#mainCont span.left {
+  left: -200%;
+}
+#softdev {
+  color: #63cbe3;
+}
+.work-title {
+  color: grey;
+  font-weight: 900;
+  font-size: 0.6em;
+}
+
+.work-desc {
+  color: grey;
+  opacity: 0.8;
+}
+
+.feature-item {
+  transition: all 0.2s ease-in-out 0s !important;
+}
+.feature-item:hover {
+  transform: translateY(-13px);
+}
+
+/* .mycard:hover {
+  background: linear-gradient(130deg, #489fab 0%, #c4b7a7 100%);
+}
+
+
+
+.mycard:hover i,
+.mycard:hover h4,
+.mycard:hover p {
+  color: white;
+  transition: 0.4s all ease-in-out;
+} */
+/* .flip-container {
+  perspective: 1000px;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+  height: 280px !important;
+  position: relative !important;
+}
+
+.flip-container,
+.front,
+.back {
+  width: 100%;
+  height: 50%;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+} */
+/* 
+@keyframes animate1 {
+  from {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, transparent, white);
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+h1:hover span:nth-child(1) {
+  animation-duration: 1s;
+  animation-name: animate1;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate3 {
+  from {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(270deg, transparent, white);
+  }
+
+  to {
+    right: 100%;
+    transition: 1s;
+  }
+}
+
+h1:hover span:nth-child(3) {
+  animation-duration: 1s;
+  animation-name: animate3;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+  from {
+    top: -100%;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+  }
+
+  to {
+    top: 100%;
+    transition: 1s;
+  }
+}
+
+h1:hover span:nth-child(2) {
+  animation-duration: 1s;
+  animation-name: animate2;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate4 {
+  from {
+    bottom: -100%;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, white);
+  }
+
+  to {
+    bottom: 100%;
+    transition: 1s;
+  }
+}
+
+h1:hover span:nth-child(4) {
+  animation-duration: 1s;
+  animation-name: animate4;
+  animation-iteration-count: infinite;
+  animation-delay: 0.75s;
+} */
