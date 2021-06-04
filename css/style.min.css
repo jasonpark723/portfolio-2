@@ -164,7 +164,6 @@ section {
   opacity: 0;
   animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
   animation-delay: 0.5s;
-  cursor: pointer;
 }
 
 .jumbotron-single h1 {
